@@ -1,68 +1,115 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RandomRiffs
 
-## Available Scripts
+RandomRiffs is a personal productivity and blogging platform built with React. It combines a full-featured blog with task management capabilities and additional miscellaneous components for tracking books and axioms.
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+This application serves as a personal hub for managing blog posts, tracking tasks, and maintaining a collection of thoughts and reading logs. The interface provides a clean, organized way to view and manage content with routing support for detailed views and editing capabilities.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Blog Management
+- Create, view, edit, and delete blog posts
+- View individual blog post details
+- Browse all posts with pagination support
+- Recent posts displayed on the home page
 
-### `npm test`
+### Task Management
+- Track and organize personal tasks
+- Integrated task component on the home page
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Additional Components
+- Gypsy Axiom component for philosophical musings
+- Book logs to track reading progress and notes
 
-### `npm run build`
+### Technical Features
+- Built with React and Redux for state management
+- React Router for navigation and routing
+- Material-UI for consistent component design
+- Responsive design for various screen sizes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Before running this application, ensure you have the following installed:
+- Node.js (version 12 or higher recommended)
+- npm (comes with Node.js)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```
+   git clone https://github.com/pappater/randomriffs.git
+   cd randomriffs
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the application in development mode:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+This will start the development server and open the application in your default browser at [http://localhost:3000](http://localhost:3000). The page will automatically reload when you make changes to the code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To create a production-ready build:
 
-### Code Splitting
+```
+npm run build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This command creates an optimized build of the application in the `build` folder. The build is minified and includes hashed filenames for caching purposes.
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The application is configured for deployment to GitHub Pages. To deploy:
 
-### Making a Progressive Web App
+```
+npm run deploy
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This will build the application and deploy it to the GitHub Pages site configured in the package.json file.
 
-### Advanced Configuration
+## Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+To run the test suite:
 
-### Deployment
+```
+npm test
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This launches the test runner in interactive watch mode.
 
-### `npm run build` fails to minify
+## Project Structure
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- `/src/components` - Contains all React components organized by feature
+  - `blogComponent` - Blog listing and display
+  - `blogDetailsComponent` - Individual blog post view
+  - `blogEditForm` - Form for creating/editing posts
+  - `homeComponent` - Main landing page
+  - `taskComponent` - Task management interface
+  - `navbarComponent` - Navigation bar
+  - `miscellaneousComponent` - Additional features (Gypsy Axiom, Book Logs)
+- `/src/store` - Redux store, actions, and reducers
+- `/public` - Static assets and HTML template
+
+## Technologies Used
+
+- React 16.13
+- Redux for state management
+- Redux Saga for handling side effects
+- React Router for navigation
+- Material-UI for UI components
+- Axios for API calls
+- Moment.js for date handling
+
+## License
+
+This project is private and not licensed for public use.
